@@ -1,0 +1,143 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Programación 3: Fichero Fuente PreguntasDelCurso/FileHandler.java</title>
+<link rel="stylesheet" type="text/css" href="tabs.css">
+<link rel="stylesheet" type="text/css" href="docs/custom.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+          <div class="logo-image">
+            <img alt="Logo" src="logoDIC.png"/>
+          </div>
+        </tr>
+        <tr>
+          <div class="button-image">
+            <a href="https://github.com/Domingo1987">
+              <img alt="GitHub" src="../github-button.png" class="button-img">
+            </a>
+          </div>
+        </tr>
+    </tbody>
+  </table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3a9ed874b38ba2e42305755b8ae36fb2.html">PreguntasDelCurso</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">FileHandler.java</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="PreguntasDelCurso_2FileHandler_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">package </span>PreguntasDelCurso;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> <span class="keyword">import</span> java.io.*;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classPreguntasDelCurso_1_1FileHandler.html">   17</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="classPreguntasDelCurso_1_1FileHandler.html">FileHandler</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">private</span> String filename;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classPreguntasDelCurso_1_1FileHandler.html#af696861a6baecf3a827c26ef66f48812">   26</a></span>    <span class="keyword">public</span> <a class="code hl_function" href="classPreguntasDelCurso_1_1FileHandler.html#af696861a6baecf3a827c26ef66f48812">FileHandler</a>(String filename) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        this.filename = filename;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classPreguntasDelCurso_1_1FileHandler.html#a7fc8f657d95ea9dd424007d4319cf23c">   37</a></span>    <span class="keyword">public</span> <a class="code hl_class" href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasList</a> <a class="code hl_function" href="classPreguntasDelCurso_1_1FileHandler.html#a7fc8f657d95ea9dd424007d4319cf23c">readQuestions</a>() throws IOException, ClassNotFoundException {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_class" href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasList</a> questionList = <span class="keyword">new</span> <a class="code hl_class" href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasList</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        FileInputStream fileInputStream = <span class="keyword">new</span> FileInputStream(filename);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        ObjectInputStream objectInputStream = <span class="keyword">new</span> ObjectInputStream(fileInputStream);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        questionList = (<a class="code hl_class" href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasList</a>) objectInputStream.readObject();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        objectInputStream.close();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        fileInputStream.close();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">return</span> questionList;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classPreguntasDelCurso_1_1FileHandler.html#a4feaeabc4fb5e91a16987de88d9a3352">   57</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classPreguntasDelCurso_1_1FileHandler.html#a4feaeabc4fb5e91a16987de88d9a3352">writeQuestions</a>(<a class="code hl_class" href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasList</a> questionList) <span class="keywordflow">throws</span> IOException {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        FileOutputStream fileOutputStream = <span class="keyword">new</span> FileOutputStream(filename);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        ObjectOutputStream objectOutputStream = <span class="keyword">new</span> ObjectOutputStream(fileOutputStream);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        objectOutputStream.writeObject(questionList);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        objectOutputStream.close();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        fileOutputStream.close();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classPreguntasDelCurso_1_1FileHandler.html#a23c6cd5d9c0e86f7000721140ff5f364">   72</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classPreguntasDelCurso_1_1FileHandler.html#a23c6cd5d9c0e86f7000721140ff5f364">limpiarArchivo</a>() throws IOException {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        FileWriter fileWriter = <span class="keyword">new</span> FileWriter(filename, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        fileWriter.write(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        fileWriter.close();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
+<div class="ttc" id="aclassPreguntasDelCurso_1_1FileHandler_html"><div class="ttname"><a href="classPreguntasDelCurso_1_1FileHandler.html">PreguntasDelCurso.FileHandler</a></div><div class="ttdoc">Clase para manejar archivos de preguntas.</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCurso_2FileHandler_8java_source.html#l00017">FileHandler.java:17</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCurso_1_1FileHandler_html_a23c6cd5d9c0e86f7000721140ff5f364"><div class="ttname"><a href="classPreguntasDelCurso_1_1FileHandler.html#a23c6cd5d9c0e86f7000721140ff5f364">PreguntasDelCurso.FileHandler.limpiarArchivo</a></div><div class="ttdeci">void limpiarArchivo()</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCurso_2FileHandler_8java_source.html#l00072">FileHandler.java:72</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCurso_1_1FileHandler_html_a4feaeabc4fb5e91a16987de88d9a3352"><div class="ttname"><a href="classPreguntasDelCurso_1_1FileHandler.html#a4feaeabc4fb5e91a16987de88d9a3352">PreguntasDelCurso.FileHandler.writeQuestions</a></div><div class="ttdeci">void writeQuestions(PreguntasList questionList)</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCurso_2FileHandler_8java_source.html#l00057">FileHandler.java:57</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCurso_1_1FileHandler_html_a7fc8f657d95ea9dd424007d4319cf23c"><div class="ttname"><a href="classPreguntasDelCurso_1_1FileHandler.html#a7fc8f657d95ea9dd424007d4319cf23c">PreguntasDelCurso.FileHandler.readQuestions</a></div><div class="ttdeci">PreguntasList readQuestions()</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCurso_2FileHandler_8java_source.html#l00037">FileHandler.java:37</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCurso_1_1FileHandler_html_af696861a6baecf3a827c26ef66f48812"><div class="ttname"><a href="classPreguntasDelCurso_1_1FileHandler.html#af696861a6baecf3a827c26ef66f48812">PreguntasDelCurso.FileHandler.FileHandler</a></div><div class="ttdeci">FileHandler(String filename)</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCurso_2FileHandler_8java_source.html#l00026">FileHandler.java:26</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCurso_1_1PreguntasList_html"><div class="ttname"><a href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasDelCurso.PreguntasList</a></div><div class="ttdoc">Clase que representa una lista de preguntas para ser utilizada en un juego de preguntas y respuestas.</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasList_8java_source.html#l00016">PreguntasList.java:16</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

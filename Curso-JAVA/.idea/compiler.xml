@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="PreguntasDelCurso" />
+        <module name="pooshowcase" />
+        <module name="PreguntasDelCursoMVC (1)" />
+        <module name="PreguntasDelCursoMVC" />
+        <module name="contador-clicks" />
+        <module name="preguntasMVC" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

@@ -1,0 +1,145 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Programación 3: Fichero Fuente PreguntasDelCursoMVC/FileHandler.java</title>
+<link rel="stylesheet" type="text/css" href="tabs.css">
+<link rel="stylesheet" type="text/css" href="docs/custom.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+          <div class="logo-image">
+            <img alt="Logo" src="logoDIC.png"/>
+          </div>
+        </tr>
+        <tr>
+          <div class="button-image">
+            <a href="https://github.com/Domingo1987">
+              <img alt="GitHub" src="../github-button.png" class="button-img">
+            </a>
+          </div>
+        </tr>
+    </tbody>
+  </table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f36c53898ac00db9cd00943e0205e308.html">PreguntasDelCursoMVC</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">FileHandler.java</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="PreguntasDelCursoMVC_2FileHandler_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">package </span>PreguntasDelCursoMVC;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">import</span> <a class="code hl_package" href="namespacePreguntasDelCurso.html">PreguntasDelCurso</a>.<a class="code hl_class" href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasList</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> <span class="keyword">import</span> java.io.*;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classPreguntasDelCursoMVC_1_1FileHandler.html">   18</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="classPreguntasDelCursoMVC_1_1FileHandler.html">FileHandler</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">private</span> String filename;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classPreguntasDelCursoMVC_1_1FileHandler.html#ad1c2eb3f7239b75075fa820089c66ca9">   27</a></span>    <span class="keyword">public</span> <a class="code hl_function" href="classPreguntasDelCursoMVC_1_1FileHandler.html#ad1c2eb3f7239b75075fa820089c66ca9">FileHandler</a>(String filename) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        this.filename = filename;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classPreguntasDelCursoMVC_1_1FileHandler.html#a0dc7778d79fa304b6d3a1379dc321deb">   38</a></span>    <span class="keyword">public</span> <a class="code hl_class" href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasList</a> <a class="code hl_function" href="classPreguntasDelCursoMVC_1_1FileHandler.html#a0dc7778d79fa304b6d3a1379dc321deb">readQuestions</a>() throws IOException, ClassNotFoundException {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <a class="code hl_class" href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasList</a> questionList = <span class="keyword">new</span> <a class="code hl_class" href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasList</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        FileInputStream fileInputStream = <span class="keyword">new</span> FileInputStream(filename);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        ObjectInputStream objectInputStream = <span class="keyword">new</span> ObjectInputStream(fileInputStream);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        questionList = (<a class="code hl_class" href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasList</a>) objectInputStream.readObject();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        objectInputStream.close();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        fileInputStream.close();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">return</span> questionList;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classPreguntasDelCursoMVC_1_1FileHandler.html#ac420ed9661cbea8f31938c26670055fb">   58</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classPreguntasDelCursoMVC_1_1FileHandler.html#ac420ed9661cbea8f31938c26670055fb">writeQuestions</a>(<a class="code hl_class" href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasList</a> questionList) <span class="keywordflow">throws</span> IOException {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        FileOutputStream fileOutputStream = <span class="keyword">new</span> FileOutputStream(filename);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        ObjectOutputStream objectOutputStream = <span class="keyword">new</span> ObjectOutputStream(fileOutputStream);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        objectOutputStream.writeObject(questionList);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        objectOutputStream.close();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        fileOutputStream.close();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classPreguntasDelCursoMVC_1_1FileHandler.html#a18b80825bf5a79bb36b0a696c6affc3d">   73</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classPreguntasDelCursoMVC_1_1FileHandler.html#a18b80825bf5a79bb36b0a696c6affc3d">limpiarArchivo</a>() throws IOException {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        FileWriter fileWriter = <span class="keyword">new</span> FileWriter(filename, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        fileWriter.write(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        fileWriter.close();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+<div class="ttc" id="aclassPreguntasDelCursoMVC_1_1FileHandler_html"><div class="ttname"><a href="classPreguntasDelCursoMVC_1_1FileHandler.html">PreguntasDelCursoMVC.FileHandler</a></div><div class="ttdoc">Clase para manejar archivos de preguntas.</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCursoMVC_2FileHandler_8java_source.html#l00018">FileHandler.java:18</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCursoMVC_1_1FileHandler_html_a0dc7778d79fa304b6d3a1379dc321deb"><div class="ttname"><a href="classPreguntasDelCursoMVC_1_1FileHandler.html#a0dc7778d79fa304b6d3a1379dc321deb">PreguntasDelCursoMVC.FileHandler.readQuestions</a></div><div class="ttdeci">PreguntasList readQuestions()</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCursoMVC_2FileHandler_8java_source.html#l00038">FileHandler.java:38</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCursoMVC_1_1FileHandler_html_a18b80825bf5a79bb36b0a696c6affc3d"><div class="ttname"><a href="classPreguntasDelCursoMVC_1_1FileHandler.html#a18b80825bf5a79bb36b0a696c6affc3d">PreguntasDelCursoMVC.FileHandler.limpiarArchivo</a></div><div class="ttdeci">void limpiarArchivo()</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCursoMVC_2FileHandler_8java_source.html#l00073">FileHandler.java:73</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCursoMVC_1_1FileHandler_html_ac420ed9661cbea8f31938c26670055fb"><div class="ttname"><a href="classPreguntasDelCursoMVC_1_1FileHandler.html#ac420ed9661cbea8f31938c26670055fb">PreguntasDelCursoMVC.FileHandler.writeQuestions</a></div><div class="ttdeci">void writeQuestions(PreguntasList questionList)</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCursoMVC_2FileHandler_8java_source.html#l00058">FileHandler.java:58</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCursoMVC_1_1FileHandler_html_ad1c2eb3f7239b75075fa820089c66ca9"><div class="ttname"><a href="classPreguntasDelCursoMVC_1_1FileHandler.html#ad1c2eb3f7239b75075fa820089c66ca9">PreguntasDelCursoMVC.FileHandler.FileHandler</a></div><div class="ttdeci">FileHandler(String filename)</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCursoMVC_2FileHandler_8java_source.html#l00027">FileHandler.java:27</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCurso_1_1PreguntasList_html"><div class="ttname"><a href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasDelCurso.PreguntasList</a></div><div class="ttdoc">Clase que representa una lista de preguntas para ser utilizada en un juego de preguntas y respuestas.</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasList_8java_source.html#l00016">PreguntasList.java:16</a></div></div>
+<div class="ttc" id="anamespacePreguntasDelCurso_html"><div class="ttname"><a href="namespacePreguntasDelCurso.html">PreguntasDelCurso</a></div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCurso_2AdminGUI_8java_source.html#l00001">AdminGUI.java:1</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

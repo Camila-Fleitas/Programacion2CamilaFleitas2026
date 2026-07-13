@@ -1,0 +1,40 @@
+.logo-image {
+  align-items: center; /* para centrar verticalmente */
+  width: 80%;
+}
+
+.logo-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button-image {
+  display: flex;
+  align-items: center; /* para centrar verticalmente */
+  width: 20%;
+  text-align: right;
+}
+
+
+.button-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+#titlearea {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  border-bottom: 1px solid var(--title-separator-color);
+  background-color: #a9518b;
+  display: inline-flex;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: var(--font-family-normal);
+  line-height: 22px;
+}

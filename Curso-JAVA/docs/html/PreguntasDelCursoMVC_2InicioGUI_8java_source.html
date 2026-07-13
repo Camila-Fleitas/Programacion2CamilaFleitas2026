@@ -1,0 +1,183 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Programación 3: Fichero Fuente PreguntasDelCursoMVC/InicioGUI.java</title>
+<link rel="stylesheet" type="text/css" href="tabs.css">
+<link rel="stylesheet" type="text/css" href="docs/custom.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="custom.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+  <table cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+          <div class="logo-image">
+            <img alt="Logo" src="logoDIC.png"/>
+          </div>
+        </tr>
+        <tr>
+          <div class="button-image">
+            <a href="https://github.com/Domingo1987">
+              <img alt="GitHub" src="../github-button.png" class="button-img">
+            </a>
+          </div>
+        </tr>
+    </tbody>
+  </table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f36c53898ac00db9cd00943e0205e308.html">PreguntasDelCursoMVC</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">InicioGUI.java</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="PreguntasDelCursoMVC_2InicioGUI_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">package </span>PreguntasDelCursoMVC;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">import</span> <a class="code hl_package" href="namespacePreguntasDelCurso.html">PreguntasDelCurso</a>.<a class="code hl_class" href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasList</a>;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">import</span> java.awt.event.*;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">import</span> javax.swing.*;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classPreguntasDelCursoMVC_1_1InicioGUI.html">   14</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="classPreguntasDelCursoMVC_1_1InicioGUI.html">InicioGUI</a> <span class="keyword">extends</span> JFrame implements ActionListener {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">private</span> JMenuBar menuBar;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">private</span> JMenuItem adminMenuItem;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">private</span> JMenuItem preguntasMenuItem;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="comment">//private JButton adminButton;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="comment">//private JButton preguntasButton;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">private</span> <a class="code hl_class" href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasList</a> modelo;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">private</span> <a class="code hl_class" href="classPreguntasDelCursoMVC_1_1FileHandler.html">FileHandler</a> fileHandler;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classPreguntasDelCursoMVC_1_1InicioGUI.html#a4fdc1469c26ffefb108352ee555f3208">   29</a></span>    <span class="keyword">public</span> <a class="code hl_function" href="classPreguntasDelCursoMVC_1_1InicioGUI.html#a4fdc1469c26ffefb108352ee555f3208">InicioGUI</a>(<a class="code hl_class" href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasList</a> modelo, <a class="code hl_class" href="classPreguntasDelCursoMVC_1_1FileHandler.html">FileHandler</a> fileHandler) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        super(<span class="stringliteral">&quot;Menú Principal&quot;</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        this.modelo = modelo;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        this.fileHandler = fileHandler;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="comment">// Crear la barra de menú y agregarla a la ventana</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        menuBar = <span class="keyword">new</span> JMenuBar();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        setJMenuBar(menuBar);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="comment">// Crear los elementos del menú y agregarlos directamente a la barra de menú</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        adminMenuItem = <span class="keyword">new</span> JMenuItem(<span class="stringliteral">&quot;Administración&quot;</span>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        adminMenuItem.addActionListener(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        menuBar.add(adminMenuItem);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        preguntasMenuItem = <span class="keyword">new</span> JMenuItem(<span class="stringliteral">&quot;Jugar&quot;</span>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        preguntasMenuItem.addActionListener(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        menuBar.add(preguntasMenuItem);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        setSize(800, 600);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        setLocationRelativeTo(<span class="keyword">null</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        setVisible(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="comment">/* </span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">        adminButton = new JButton(&quot;Administración&quot;);</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">        adminButton.addActionListener(this);</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">        </span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">        preguntasButton = new JButton(&quot;Jugar&quot;);</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">        preguntasButton.addActionListener(this);</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">        </span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">        JPanel panel = new JPanel();</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">        panel.add(adminButton);</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">        panel.add(preguntasButton);</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">        </span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">        getContentPane().add(panel);</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">        </span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">        setSize(300, 100);</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">        setLocationRelativeTo(null);</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">        setVisible(true);*/</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classPreguntasDelCursoMVC_1_1InicioGUI.html#a6316bed2a37ce3b00d8d09838b516eda">   76</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classPreguntasDelCursoMVC_1_1InicioGUI.html#a6316bed2a37ce3b00d8d09838b516eda">actionPerformed</a>(ActionEvent e) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">if</span> (e.getSource() == adminMenuItem) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="comment">// Crear instancia de AdminControlador y mostrar vista AdminGUI</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <a class="code hl_class" href="classPreguntasDelCursoMVC_1_1AdminGUI.html">AdminGUI</a> vistaAdmin = <span class="keyword">new</span> <a class="code hl_class" href="classPreguntasDelCursoMVC_1_1AdminGUI.html">AdminGUI</a>(modelo, <a class="code hl_class" href="classPreguntasDelCursoMVC_1_1InicioGUI.html">InicioGUI</a>.this);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <a class="code hl_class" href="classPreguntasDelCursoMVC_1_1AdminControlador.html">AdminControlador</a> controladorAdmin = <span class="keyword">new</span> <a class="code hl_class" href="classPreguntasDelCursoMVC_1_1AdminControlador.html">AdminControlador</a>(modelo, fileHandler, vistaAdmin);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="comment">// Asociar el controlador como listener de los componentes de la vista</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            vistaAdmin.<a class="code hl_function" href="classPreguntasDelCursoMVC_1_1AdminGUI.html#a5e67de3a3a07759ece26f35b5a6a4ca7">getConfirmarButton</a>().addActionListener(controladorAdmin);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            vistaAdmin.<a class="code hl_function" href="classPreguntasDelCursoMVC_1_1AdminGUI.html#a9882f728a5d8644031931d4faa14fb9e">getAtrasButton</a>().addActionListener(controladorAdmin);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="comment">/* </span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">            AdminGUI adminGUI = new AdminGUI(modelo, this); // Pasar &#39;this&#39; como argumento</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">            adminGUI.setVisible(true);*/</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (e.getSource() == preguntasMenuItem) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <a class="code hl_class" href="classPreguntasDelCursoMVC_1_1PreguntaGUI.html">PreguntaGUI</a> preguntaGUI = <span class="keyword">new</span> <a class="code hl_class" href="classPreguntasDelCursoMVC_1_1PreguntaGUI.html">PreguntaGUI</a>(modelo, <span class="keyword">this</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            preguntaGUI.setVisible(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        dispose();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
+<div class="ttc" id="aclassPreguntasDelCursoMVC_1_1AdminControlador_html"><div class="ttname"><a href="classPreguntasDelCursoMVC_1_1AdminControlador.html">PreguntasDelCursoMVC.AdminControlador</a></div><div class="ttdef"><b>Definition:</b> <a href="AdminControlador_8java_source.html#l00013">AdminControlador.java:13</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCursoMVC_1_1AdminGUI_html"><div class="ttname"><a href="classPreguntasDelCursoMVC_1_1AdminGUI.html">PreguntasDelCursoMVC.AdminGUI</a></div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCursoMVC_2AdminGUI_8java_source.html#l00024">AdminGUI.java:24</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCursoMVC_1_1AdminGUI_html_a5e67de3a3a07759ece26f35b5a6a4ca7"><div class="ttname"><a href="classPreguntasDelCursoMVC_1_1AdminGUI.html#a5e67de3a3a07759ece26f35b5a6a4ca7">PreguntasDelCursoMVC.AdminGUI.getConfirmarButton</a></div><div class="ttdeci">JButton getConfirmarButton()</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCursoMVC_2AdminGUI_8java_source.html#l00142">AdminGUI.java:142</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCursoMVC_1_1AdminGUI_html_a9882f728a5d8644031931d4faa14fb9e"><div class="ttname"><a href="classPreguntasDelCursoMVC_1_1AdminGUI.html#a9882f728a5d8644031931d4faa14fb9e">PreguntasDelCursoMVC.AdminGUI.getAtrasButton</a></div><div class="ttdeci">JButton getAtrasButton()</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCursoMVC_2AdminGUI_8java_source.html#l00146">AdminGUI.java:146</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCursoMVC_1_1FileHandler_html"><div class="ttname"><a href="classPreguntasDelCursoMVC_1_1FileHandler.html">PreguntasDelCursoMVC.FileHandler</a></div><div class="ttdoc">Clase para manejar archivos de preguntas.</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCursoMVC_2FileHandler_8java_source.html#l00018">FileHandler.java:18</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCursoMVC_1_1InicioGUI_html"><div class="ttname"><a href="classPreguntasDelCursoMVC_1_1InicioGUI.html">PreguntasDelCursoMVC.InicioGUI</a></div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCursoMVC_2InicioGUI_8java_source.html#l00014">InicioGUI.java:14</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCursoMVC_1_1InicioGUI_html_a4fdc1469c26ffefb108352ee555f3208"><div class="ttname"><a href="classPreguntasDelCursoMVC_1_1InicioGUI.html#a4fdc1469c26ffefb108352ee555f3208">PreguntasDelCursoMVC.InicioGUI.InicioGUI</a></div><div class="ttdeci">InicioGUI(PreguntasList modelo, FileHandler fileHandler)</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCursoMVC_2InicioGUI_8java_source.html#l00029">InicioGUI.java:29</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCursoMVC_1_1InicioGUI_html_a6316bed2a37ce3b00d8d09838b516eda"><div class="ttname"><a href="classPreguntasDelCursoMVC_1_1InicioGUI.html#a6316bed2a37ce3b00d8d09838b516eda">PreguntasDelCursoMVC.InicioGUI.actionPerformed</a></div><div class="ttdeci">void actionPerformed(ActionEvent e)</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCursoMVC_2InicioGUI_8java_source.html#l00076">InicioGUI.java:76</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCursoMVC_1_1PreguntaGUI_html"><div class="ttname"><a href="classPreguntasDelCursoMVC_1_1PreguntaGUI.html">PreguntasDelCursoMVC.PreguntaGUI</a></div><div class="ttdoc">Clase que define la interfaz gráfica de usuario para mostrar preguntas y opciones de respuesta.</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCursoMVC_2PreguntaGUI_8java_source.html#l00022">PreguntaGUI.java:22</a></div></div>
+<div class="ttc" id="aclassPreguntasDelCurso_1_1PreguntasList_html"><div class="ttname"><a href="classPreguntasDelCurso_1_1PreguntasList.html">PreguntasDelCurso.PreguntasList</a></div><div class="ttdoc">Clase que representa una lista de preguntas para ser utilizada en un juego de preguntas y respuestas.</div><div class="ttdef"><b>Definition:</b> <a href="PreguntasList_8java_source.html#l00016">PreguntasList.java:16</a></div></div>
+<div class="ttc" id="anamespacePreguntasDelCurso_html"><div class="ttname"><a href="namespacePreguntasDelCurso.html">PreguntasDelCurso</a></div><div class="ttdef"><b>Definition:</b> <a href="PreguntasDelCurso_2AdminGUI_8java_source.html#l00001">AdminGUI.java:1</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>
