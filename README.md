@@ -1,4 +1,4 @@
-# Programación II Camila-Fleitas 2026.
+# Programación II Camila Fleitas 2026.
 
 ## Organización del repositorio
 
